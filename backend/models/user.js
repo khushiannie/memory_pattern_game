@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const Joi = require("joi");
+require("dotenv").config();
 const passwordComplexity = require("joi-password-complexity");
 
 const userSchema = new mongoose.Schema({
